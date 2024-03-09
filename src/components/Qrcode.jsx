@@ -22,7 +22,7 @@ const Qrcode = () => {
         fetch(img).then((response)=>response.blob()).then((blob)=>{
             const link = document.createElement("a");
             link.href = URL.createObjectURL(blob);
-            link.download = `${qrdata}`
+            link.download = "QR CODE";
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
