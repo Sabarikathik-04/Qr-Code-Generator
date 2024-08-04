@@ -44,8 +44,8 @@ const Qrcode = () => {
             Size Of QR (e.g., 150):
         </label>
         <input type="text" id="Sizeinput" value={qrsize} onChange={(e)=>setQrsize(e.target.value)} placeholder="Enter Image Size"/>
-        <button className="Generate-btn" disabled={loading} onClick={()=>generateQR(qrsize,qrdata)}>Generate QR</button>
-        <button className="Download-btn" onClick={downloadQr}>Download Qr</button>
+        <button className="Generate-btn" id="Generate" disabled={loading} onClick={()=>generateQR(qrsize,qrdata)}>Generate QR</button>
+        <button className="Download-btn" id="Download" onClick={downloadQr}>Download Qr</button>
     </div>
     <p className="Footer">
         Designed By <a href="#">SK</a>
