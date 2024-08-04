@@ -34,7 +34,7 @@ const Qrcode = () => {
     <div className="Container">
         <h1>QR CODE GENARATOR</h1>
         {loading && <p>Please Wait...</p>}
-        {img && <img src={img} alt="qr" className="qr-code-img" />}
+        {img && <img src={img} alt="qr" className="qr-code-img" id="qr-img"/>}
         <div>
         <label htmlFor="Datainput" className="input-label">
             Data For QR:
